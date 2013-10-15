@@ -1,0 +1,11 @@
+[Unit]
+Description=Bonescript server
+
+[Service]
+Environment=NODE_PATH=/usr/lib/node_modules
+WorkingDirectory=/home/root/exercises/realtime
+ExecStart=/usr/bin/node server.js
+SyslogIdentifier=bonescript
+
+[Install]
+WantedBy=multi-user.target
